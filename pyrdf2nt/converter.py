@@ -21,7 +21,6 @@ class PyRDF2Ntriples(object):
         f = open(outpath, "wb+")
         for line in p.stdout.readlines():
             print(line, file=f, end="")
-
         f.close()
 
     def executeRapper(self, inpath, outpath, serialization):
